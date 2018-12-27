@@ -21,18 +21,22 @@ h6 {
   font-family: var(--font-heading);
 }
 
-.content--container {
-  max-width: 80%;
-  margin: 0 auto;
-}
 .post-header--container {
+  width: 100vw;
+  max-height: 80;
+  min-height: 60vh;
+  background-image: url("/jason-wong-bg.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: red;
+  overflow: hidden;
 }
 
+.header-img {
+  width: 100%;
+}
 .content--title {
   font-family: var(--font-heading);
   color: var(--color-white);
