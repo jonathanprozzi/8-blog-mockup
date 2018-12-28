@@ -1,13 +1,15 @@
 html,
 body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   width: 100vmin;
 }
 
 :root {
   font-size: 62.5%;
-  --font-heading: Helvetica, serif;
-  --font-copy: Georgia, sans-serif;
+  --font-heading: Helvetica, sans-serif;
+  --font-copy: Georgia, serif;
   --color-white: #fafafa;
   --color-white-fade: rgba(250, 250, 250, 0.8);
 }
@@ -23,9 +25,10 @@ h6 {
 
 .post-header--container {
   width: 100vw;
-  max-height: 80;
-  min-height: 60vh;
-  background-image: url("/jason-wong-bg.jpg");
+  max-height: 80vh;
+  min-height: 50vh;
+  background: url("/jason-wong-bg.jpg") rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -37,16 +40,31 @@ h6 {
 .header-img {
   width: 100%;
 }
-.content--title {
+.post-header-content--title {
   font-family: var(--font-heading);
   color: var(--color-white);
   font-size: 4.8rem;
+  line-height: 3rem;
+  font-weight: 700;
 }
 
-.content--byline {
-  font-family: var(--font-copy);
+.header--meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.post-header-content--byline {
+  font-family: var(--font-heading);
   color: var(--color-white-fade);
-  font-size: 3.6rem;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 100;
+}
+
+.post-header-content--byline a {
+  text-decoration: none;
+  color: var(--color-white-fade);
 }
 
 .content--copy {
