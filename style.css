@@ -11,6 +11,7 @@ body {
   --font-copy: Georgia, serif;
   --color-white: #fafafa;
   --color-white-fade: rgba(250, 250, 250, 0.8);
+  --color-copy: #393838;
 }
 
 h1,
@@ -75,8 +76,10 @@ h6 {
 .content--copy {
   grid-area: content;
   font-family: var(--font-copy);
+  color: var(--color-copy);
   font-size: 2.4rem;
-  margin: 0 auto;
+  line-height: 3rem;
+  margin-top: 5vh;
   max-width: 80%;
 }
 
@@ -86,9 +89,57 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: red;
   padding-top: 20px;
-  background-color: #f5f4f5;
-  margin: 0px;
-  padding: 0px;
+}
+
+.site-branding--container {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin: 0 5vw;
+}
+.avatar--photo-wrapper {
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.avatar--photo {
+  border-radius: 100%;
+}
+
+.author-info--container {
+  text-align: right;
+  margin-top: 5vh;
+}
+
+.author-info--copy {
+  font-family: var(--font-copy);
+  color: #747979;
+  font-size: 1.8rem;
+}
+
+.main-nav--container {
+  text-align: right;
+  margin-top: 5vh;
+}
+
+.main-nav--list {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.main-nav--entry {
+  list-style-type: none;
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  padding: 1vh 0;
+}
+
+.main-nav--entry a {
+  text-decoration: none;
+  color: #393838;
+}
+
+.main-nav--entry {
 }
