@@ -48,6 +48,14 @@ h6 {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 1000px) {
+  .post-header-content--title {
+    margin: 3vh 10vw;
+    font-size: 10vw;
+    line-height: 5rem;
+  }
+}
+
 .header--meta {
   display: flex;
   flex-direction: column;
@@ -62,6 +70,14 @@ h6 {
   font-weight: 100;
 }
 
+@media only screen and (max-width: 1000px) {
+  .post-header-content--byline {
+    margin: 1vh 10vw;
+    font-size: 6vw;
+    line-height: 4rem;
+  }
+}
+
 .post-header-content--byline a {
   text-decoration: none;
   color: var(--color-white-fade);
@@ -72,6 +88,15 @@ h6 {
   grid-template-columns: 1fr 4fr;
   grid-template-areas: "sidebar content";
 }
+@media only screen and (max-width: 1000px) {
+  .content--grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content"
+      "sidebar";
+  }
+}
 
 .content--copy {
   grid-area: content;
@@ -81,6 +106,18 @@ h6 {
   line-height: 3rem;
   margin-top: 5vh;
   max-width: 80%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content--copy {
+    margin: 5vh 10vw;
+    font-size: 7vw;
+  }
+
+  h2 {
+    font-size: 8vw;
+    line-height: 5vh;
+  }
 }
 
 .sidebar--container {
@@ -98,6 +135,15 @@ h6 {
   text-align: right;
   margin: 0 5vw;
 }
+@media only screen and (max-width: 1000px) {
+  .site-branding--container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 0 5vw;
+  }
+}
 .avatar--photo-wrapper {
   margin: 0;
   padding: 0;
@@ -106,6 +152,8 @@ h6 {
 
 .avatar--photo {
   border-radius: 100%;
+  width: 150px;
+  height: 150px;
 }
 
 .author-info--container {
@@ -120,13 +168,23 @@ h6 {
 }
 
 .main-nav--container {
+  grid-area: navigation;
   text-align: right;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 .main-nav--list {
   display: inline-block;
   list-style-type: none;
+}
+@media only screen and (max-width: 1000px) {
+  .main-nav--list {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .main-nav--entry a {
+    padding: 2vw;
+  }
 }
 
 .main-nav--entry {
