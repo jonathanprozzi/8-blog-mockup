@@ -67,7 +67,18 @@ h6 {
   color: var(--color-white-fade);
 }
 
+.content--container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "sidebar content";
+}
+
 .content--copy {
   font-family: var(--font-copy);
   font-size: 2.4rem;
+  grid-area: content;
+}
+
+.sidebar--container {
+  grid-area: sidebar;
 }
