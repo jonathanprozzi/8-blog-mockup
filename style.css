@@ -3,7 +3,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 100vmin;
 }
 
 :root {
@@ -67,18 +66,29 @@ h6 {
   color: var(--color-white-fade);
 }
 
-.content--container {
+.content--grid {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-areas: "sidebar content";
 }
 
 .content--copy {
+  grid-area: content;
   font-family: var(--font-copy);
   font-size: 2.4rem;
-  grid-area: content;
+  margin: 0 auto;
+  max-width: 80%;
 }
 
 .sidebar--container {
   grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  padding-top: 20px;
+  background-color: #f5f4f5;
+  margin: 0px;
+  padding: 0px;
 }
